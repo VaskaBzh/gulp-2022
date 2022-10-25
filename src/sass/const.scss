@@ -1,0 +1,29 @@
+$white: #fff;
+$black: #000;
+
+$redMain: #e60000;
+$red:	#fb0000;
+$red2: 	#fe0b18;
+$red3: #A54E5F;
+$redLight: #fe4d58;
+
+$grayLight: #feeff2;
+$gray:   #BFB6B8;
+
+@mixin lg {
+  @media (max-width: 1600.98px) { @content; }
+}
+
+@mixin md {
+  @media (max-width: 1279.98px) { @content; }
+}
+
+@mixin sm {
+  @media (max-width: 991.98px) { @content; }
+}
+
+@mixin xs {
+  @media (max-width: 767.98px) { @content; }
+}
+
+$transition: 0.3s;

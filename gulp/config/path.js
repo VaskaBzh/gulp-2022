@@ -19,7 +19,7 @@ export const path = {
         js: `${srcFolder}/js/app.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
-        scss: `${srcFolder}/sass/style.sass`,
+        scss: `${srcFolder}/sass/style.scss`,
         html: `${srcFolder}/*.html`, //.pug
         files: `${srcFolder}/files/**/*.*`,
         svgicons: `${srcFolder}/svgicons/*.svg`,
@@ -29,6 +29,7 @@ export const path = {
         scss: `${srcFolder}/sass/**/*.{sass,scss}`,
         html: `${srcFolder}/**/*.html`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
+        svgSprive: `${srcFolder}/svgicons/**/*.svg`,
         files: `${srcFolder}/files/**/*.*`
     },
     clean: buildFolder,

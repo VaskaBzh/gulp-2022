@@ -35,15 +35,14 @@ function watcher() {
     gulp.watch(path.watch.scss, scss) //gulp.series(scss, ftp)
     gulp.watch(path.watch.js, js) //gulp.series(js, ftp)
     gulp.watch(path.watch.images, images) //gulp.series(images, ftp)
+    gulp.watch(path.watch.svgSprive, svgSprive) //gulp.series(images, ftp)
 }
-
-export { svgSprive }
 
 // Аоследовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, svgSprive))
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))

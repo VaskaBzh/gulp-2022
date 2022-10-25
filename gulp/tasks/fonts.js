@@ -42,7 +42,7 @@ export const ttfToWoff = () => {
 }
 export const fontsStyle = () => {
     // Файл стилей подключения шрифтов
-    let fontsFile = `./src/scss/fonts.scss`
+    let fontsFile = `./src/sass/fonts.scss`
     // Проверяем существуют ли файлы шрифтов
     fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
         if (fontsFiles) {
@@ -83,7 +83,7 @@ export const fontsStyle = () => {
                                 src: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff1") format("woff1");
                                 font-weight: ${fontWeight};
                                 font-style: normal;
-                            }/r/n`, cb)
+                            }\r\n`, cb)
                             newFileOnly = fontFileName
                     }
                 }

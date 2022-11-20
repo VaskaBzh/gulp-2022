@@ -3,9 +3,6 @@ import gulpSass from 'gulp-sass'
 import rename from 'gulp-rename'
 
 import cleanCss from 'gulp-clean-css' // Сжытие CSS файла
-import postcss from 'gulp-postcss'
-import sortCSSmq from 'sort-css-media-queries'
-import mqpacker from 'css-mqpacker' // Группирует медиазапросы.
 import webpcss from 'gulp-webpcss' // Вывод WEBP изображений
 import autoprefixer from 'gulp-autoprefixer' // Добавление вендорных префиксов
 import groupCssMediaQueries from 'gulp-group-css-media-queries' // Группировка медиа запросов
@@ -62,12 +59,6 @@ export const scss = () => {
         .pipe(rename({
             extname: '.min.css'
         }))
-        // Группируем медиазапросы.
-        .pipe(postcss([
-          mqpacker({
-            sort: sortCSSmq // Кастомный метод сортировки.
-          })
-        ]))
         .pipe(app.gulp.dest(app.path.build.css))
         .pipe(app.plugins.browsersync.stream())
 }

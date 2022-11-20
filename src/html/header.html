@@ -7,10 +7,10 @@
         <a href="" class="nav__link link">Счетчик</a>
       </nav>
       <div class="header__buttons">
-        @@if (!login) {
+        @@if (!"login") {
           <a href="#" class="header__button header__button--login">Вход|Регистрация</a>
         }
-        @@if (login) {
+        @@if ("login") {
           <a href="#" class="header__butto">Личный кабинет</a>
           <div class="header__button--block">
             <a href="#" class="header__button">Выход</a>

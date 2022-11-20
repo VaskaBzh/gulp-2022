@@ -18,7 +18,6 @@
   },
   "devDependencies": {
     "browser-sync": "latest",
-    "css-mqpacker": "^7.0.0",
     "fs": "^0.0.1-security",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
@@ -31,7 +30,6 @@
     "gulp-newer": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
-    "gulp-postcss": "^9.0.1",
     "gulp-rename": "latest",
     "gulp-replace": "latest",
     "gulp-sass": "latest",
@@ -44,7 +42,6 @@
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
     "sass": "latest",
-    "sort-css-media-queries": "^2.1.0",
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack": "latest",
